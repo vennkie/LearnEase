@@ -1,0 +1,21 @@
+{
+  "name": "learn-ease",
+  "version": "1.0.0",
+  "description": "Using LLMs to understand documents better",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && python app.py\" \"cd frontend && npm run dev\"",
+    "build": "concurrently \"cd backend && python app.py\" \"cd frontend && npm run build\"",
+    "dev:client": "cd frontend && npm run dev",
+    "dev:server": "cd backend && python app.py",
+    "build:client": "cd frontend && npm run build",
+    "build:server": "cd backend && python app.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
+
